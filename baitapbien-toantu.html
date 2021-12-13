@@ -30,5 +30,23 @@
 </table>
 <button onclick="tinhtb">Tính Điểm</button>
 <button onclick="clear">Xóa</button>
+<script>
+    function tinhtb(){
+        let vl=parseFloat(document.getElementById("vatly").value);
+        let hh=parseFloat(document.getElementById("HoaHoc").value);
+        let sh=parseFloat(document.getElementById("sinhhoc").value);
+        let to=(vl+hh+sh);
+        let dtb=(vl+hh+sh)/3;
+        document.getElementById('diemtb').value = dtb;
+        document.getElementById('tong').value = to;
+    }
+    function clear(){
+        document.getElementById('vatly').value=""
+        document.getElementById('sinhhoc').value=""
+        document.getElementById('HoaHoc').value=""
+        document.getElementById('diemtb').value=""
+        document.getElementById('tong').value=""
+    }
+</script>
 </body>
 </html>

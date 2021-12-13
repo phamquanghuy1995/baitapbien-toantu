@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+
+        <td style="width: 150px"><label for="doC">Độ C</label></td>
+        <td><input id="doC" name="doC" type="text"></td>
+    </tr>
+    <tr>
+        <td style="width: 150px"><label for="doF">Độ F</label></td>
+        <td><input id="doF" name="doF" type="text"></td>
+    </tr>
+</table>
+<br>
+<button onclick="tinhdoF()"> Tính Độ F </button>
+<hr>
+<script>
+    function tinhdoF() {
+        let a=parseFloat(document.getElementById("doC").value);
+        let b=(9*a/5)+32;
+        document.getElementById('doF').value=b;
+    }
+</script>
+</body>
+</html>
