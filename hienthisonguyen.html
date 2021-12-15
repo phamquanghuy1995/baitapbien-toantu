@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 0
+    for (let numbers = 2; count <= 20; numbers++) {
+        if (numbers < 2) {
+            continue;
+        } else if (numbers === 2) {
+            alert(numbers);
+            count++
+        } else {
+            let songuyen = true;
+            for (let N = 2; N < numbers; N++) {
+                if (numbers % N === 0) {
+                    songuyen = false;
+                    break;
+                }
+            }
+            if (songuyen === true) {
+                alert(numbers);
+                count++;
+            }
+        }
+    }
+</script>
+</body>
+</html>
