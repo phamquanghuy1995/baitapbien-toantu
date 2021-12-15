@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Máy tính bỏ túi</h3>
+<input id="sothunhat" placeholder="số thứ nhất" type="text">
+<input id="sothuhai" placeholder="số thứ hai" type="text">
+<br>
+<button onclick="add()">Phép cộng (+)</button>
+<button onclick="sub()">Phép trừ (-)</button>
+<button onclick="mul()">Phép nhân (*)</button>
+<button onclick="div()">Phép chia (/)</button>
+<div id="ketqua"></div>
+<script>
+  function add() {
+    let sothunhat = parseInt(document.getElementById("sothunhat").value);
+    let sothuhai = parseInt(document.getElementById("sothuhai").value);
+    let ketqua = sothunhat + sothuhai;
+    document.getElementById("ketqua").innerHTML = "<h3>Kết quả: " + ketqua + "</h3>"
+  }
+
+  function sub() {
+    let sothunhat = document.getElementById("sothunhat").value;
+    let sothuhai = document.getElementById("sothuhai").value;
+    let ketqua = sothunhat - sothuhai;
+    document.getElementById("ketqua").innerText = "<h3>Kết quả: " + ketqua + "</h3>"
+  }
+
+  function mul() {
+    let sothunhat = document.getElementById("sothunhat").value;
+    let sothuhai = document.getElementById("sothuhai").value;
+    let ketqua = sothunhat * sothuhai;
+    document.write("<h3>Kết quả: " + ketqua + "</h3>")
+  }
+
+  function div() {
+    let sothunhat = document.getElementById("sothunhat").value;
+    let sothuhai = document.getElementById("sothuhai").value;
+    let ketqua = sothunhat / sothuhai;
+    document.write("<h3>Kết quả: " + ketqua + "</h3>")
+  }
+
+</script>
+</body>
+</html>
