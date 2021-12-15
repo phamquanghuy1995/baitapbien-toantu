@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2 style="text-align:center">Bảng Cửu Chương</h2>
+<script>
+    document.write('<table border="1" cellpadding="10px">');
+    for (let cot = 1; cot <= 9; cot++) {
+        document.write('<tr>');
+        for (let dong = 2; dong <= 9; dong++){
+            document.write('<td style="width: 100px">'+cot+' x '+dong+'= '+cot*dong+'</td>');
+        }
+    }
+    document.write('</table>');
+</script>
+</body>
+</html>
